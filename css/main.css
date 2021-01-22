@@ -1,0 +1,320 @@
+@import "./fonts.css";
+@import "./reset.css";
+@import "./settings.css";
+
+
+.main-wrapper {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.background-head {
+    padding-bottom: 178px;
+    background-image: url("../media/wood.jpg");
+    background-size:auto;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 54px;
+    text-transform: uppercase;
+}
+
+.wrapper-header .logo {
+    font-family: "SourceSansPro-Bold", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: #212121;
+}
+
+.wrapper-header .logo:hover {
+    color:#fff;
+}
+
+
+.nav-header-burger {
+    display: flex;
+    align-items: center;
+}
+
+.nav-header {
+    font-size: 14px;
+    margin-right: 14px;
+}
+
+.wrapper-header .nav-header ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-header ul li a {
+    padding-right: 17px;
+    font-family: "SourceSansPro-Bold", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #212121;
+}
+
+.nav-header ul li a:hover {
+    color:#fff;
+}
+
+
+/* Бургер начало */
+
+input {display: none;}
+/* label {cursor: pointer;} */
+
+.nav {user-select: none;}
+
+.nav__showmenu {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+    overflow: hidden;
+  }
+
+.menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 220px;
+    margin: 0;
+    padding: 17px 0;
+    text-transform: uppercase;
+    line-height: 2em;
+    background-color: #2c2c2c;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform .3s;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.menu__item {  
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav__check:checked~.nav__back {
+    background-color: rgba(0,0,0,.2);
+    bottom: 0;
+}
+
+.menu__item:hover,.nav__showmenu:hover,.menu__showsub:hover {opacity: 0.7;}
+.nav__showmenu:hover {
+    color:#fff;
+    cursor: pointer;
+}
+
+.nav__check:checked+.nav__showmenu {color:#fff;}
+.menu__check:checked+.menu__showsub {transform: rotate(180deg);}
+.nav__check:checked~.menu {transform: translateX(0);}
+
+  /* Бургер конец */
+
+.wrapper-section {
+    text-align: right;
+}
+
+.wrapper-storyteller h1 {
+    padding-top: 387px;
+    font-family: "SourceSansPro-Black", sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -6px;
+}
+/* Линия под заголовком */
+.storyteller {
+    display: block;
+    width: 140px;
+    height: 3px;
+    margin-left: auto;
+    margin-top: 15px;
+    background-color: #232323;
+    
+}
+/* Текст под заголовком h1 */
+.wrapper-storyteller-text {
+    margin-top: 30px;
+    font-family: "SourceSansPro-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: -0.4px;
+}
+
+/* Кнопка */
+.wrapper-storyteller-button {
+    display: inline-block;
+    border: 2.5px solid #212121;
+    margin-top: 46px;
+    padding: 16px 96px 16px 81px;
+    font-family: "SourceSansPro-SemiBold", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #212121;
+}
+.wrapper-storyteller-button:hover {
+    color:white;
+    background-color: #212121;
+}
+
+/* Секция 2 */
+.who-why {
+    text-align: center;
+    margin-top: 102px;
+    margin-bottom: 106px;
+}
+
+.who-why h2 {
+    margin-top: 23px;
+    font-family: "SourceSansPro-Bold", sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.who-why p {
+margin-top: 64px;
+font-family: "SourceSansPro-Regular", sans-serif;
+font-size: 16px;
+line-height: 33px;
+}
+
+/* Секция 3 */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #efefef;
+    padding-bottom: 106px;
+    padding-top: 83px;
+}
+
+.item-feature h3 {
+    padding-top: 30px;
+    font-family: "SourceSansPro-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.item-feature p {
+    font-family: "SourceSansPro-Regular", sans-serif;
+    font-size: 16px;
+    padding-top: 32px;
+    line-height: 1.5;
+}
+
+
+/* Секция 4 */
+
+.featured-articles h2 {
+    padding-top: 100px;
+    font-family: "SourceSansPro-Bold", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.featured-articles>p {
+    padding-top: 44px;
+    font-family: "SourceSansPro-Regular", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.9;
+}
+
+.wrapper-item {
+    display: flex;
+    justify-content: center;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    color: white;
+}
+
+.jimmy-jeferson {
+    padding-left: 37px;
+    margin-right: 26px;
+    width: 33.3%;
+    background-color: #212121;
+}
+
+
+.gail-gutierrez {
+    margin-right: 26px;
+    padding-left: 37px;
+    width: 33.3%;
+    background-color: #212121;
+}
+
+.mason-johnston {
+    padding-left: 37px;
+    width: 33.3%;
+    background-color: #212121;
+}
+
+.wrapper-item-text {
+    padding-top: 70px;
+    font-family: "SourceSansPro-Regular", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.wrapper-item-sentence {
+    padding-top: 32px;
+    font-family: "SourceSansPro-Regular", sans-serif;
+    font-size: 24px;
+}
+.item-text {
+    padding-top: 9px;
+    padding-left: 12px;
+    font-family: "SourceSansPro-SemiBold", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.jimmy-jeferson-item {
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 32px;
+}
+
+.gail-gutierrez-item {
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 32px;
+}
+
+
+.mason-johnston-item {
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 32px;
+}
