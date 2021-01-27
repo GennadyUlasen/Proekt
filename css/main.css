@@ -3,17 +3,14 @@
 @import "./settings.css";
 
 
-.main-wrapper {
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .background-head {
     padding-bottom: 178px;
     background-image: url("../media/wood.jpg");
-    background-size:auto;
+    background-size:cover;
     background-repeat: no-repeat;
-    box-sizing: border-box;
+    background-position:  center bottom;
+    height: 100vh;
 }
 
 header {
@@ -232,6 +229,10 @@ line-height: 33px;
 
 /* Секция 4 */
 
+.featured-articles {
+    padding-bottom: 160px;
+}
+
 .featured-articles h2 {
     padding-top: 100px;
     font-family: "SourceSansPro-Bold", sans-serif;
@@ -257,6 +258,7 @@ line-height: 33px;
     margin-right: auto;
     margin-top: 100px;
     color: white;
+    min-width: 0;
 }
 
 .jimmy-jeferson {
@@ -304,12 +306,14 @@ line-height: 33px;
     display: flex;
     padding-top: 90px;
     padding-bottom: 32px;
+    min-width: 0;
 }
 
 .gail-gutierrez-item {
     display: flex;
     padding-top: 70px;
     padding-bottom: 32px;
+    min-width: 0;
 }
 
 
@@ -317,4 +321,40 @@ line-height: 33px;
     display: flex;
     padding-top: 90px;
     padding-bottom: 32px;
+    min-width: 0;
 }
+
+/* Секция 5 */
+
+.clients {
+    padding-bottom: 78px;
+    background-color: #efefef;
+}
+
+.clients h2 {
+    padding-top: 66px;
+    padding-bottom: 52px;
+    font-family: "SourceSansPro-Bold", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+/* .clients-wrapper {
+    display: flex;
+    justify-content: center;
+} */
+
+  .clients-img.swiper-slide {
+    text-align: center;
+    /* ??? */
+  }
+
+  /* Секция 6 */
+
+
+
+
+
+
