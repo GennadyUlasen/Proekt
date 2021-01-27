@@ -14,65 +14,55 @@
 }
 
 header {
+    position: relative;
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 52px;
+    height: 100%;
 }
 
-.wrapper-header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 54px;
-    text-transform: uppercase;
-}
-
-.wrapper-header .logo {
-    font-family: "SourceSansPro-Bold", sans-serif;
-    font-weight: 600;
+header .logo {
     font-size: 18px;
     text-decoration: none;
     color: #212121;
+    text-transform: uppercase;
 }
 
-.wrapper-header .logo:hover {
+header .logo:hover {
     color:#fff;
 }
 
 
-.nav-header-burger {
-    display: flex;
-    align-items: center;
-}
-
 .nav-header {
-    font-size: 14px;
-    margin-right: 14px;
-}
-
-.wrapper-header .nav-header ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: "SourceSansPro-Bold", sans-serif;
+    font-weight: 800;
 }
 
-.nav-header ul li a {
-    padding-right: 17px;
-    font-family: "SourceSansPro-Bold", sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    color: #212121;
+.nav-header ul {
+    display: flex;
 }
 
 .nav-header ul li a:hover {
-    color:#fff;
+    color:#fff
 }
 
+.nav-header ul li {
+    margin-right: 22px;
+}
+
+.nav-header .nav-link {
+    color: #212121;
+    text-decoration: none;
+    font-size: 14px;
+}
 
 /* Бургер начало */
 
 input {display: none;}
-/* label {cursor: pointer;} */
-
-.nav {user-select: none;}
 
 .nav__showmenu {
     position: relative;
@@ -81,6 +71,7 @@ input {display: none;}
 }
 
 .menu {
+    flex-direction: column;
     list-style: none;
     padding: 0;
     color: #fff;
@@ -131,34 +122,46 @@ input {display: none;}
   /* Бургер конец */
 
 .wrapper-section {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 52px;
 }
 
-.wrapper-storyteller h1 {
-    padding-top: 387px;
-    font-family: "SourceSansPro-Black", sans-serif;
+/* Линия под заголовком */
+h1::after {
+    content: "";
+    display: block;
+    margin-top: 20px;
+    width: 140px;
+    height: 3px;
+    background-color: #212121;
+    position: absolute;
+    right: 0;
+}
+
+
+h1 {
+    margin-bottom: 15px;
+    font-family: "SourceSansPro-Regular", sans-serif;
     font-size: 72px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: -6px;
 }
-/* Линия под заголовком */
-.storyteller {
-    display: block;
-    width: 140px;
-    height: 3px;
-    margin-left: auto;
-    margin-top: 15px;
-    background-color: #232323;
-    
-}
+
 /* Текст под заголовком h1 */
 .wrapper-storyteller-text {
-    margin-top: 30px;
+    display: inline-block;
+    margin-top: 42px;
+    width: 48%;
+    text-align: right;
     font-family: "SourceSansPro-Regular", sans-serif;
     font-size: 18px;
     line-height: 2;
     letter-spacing: -0.4px;
+    
 }
 
 /* Кнопка */
@@ -171,7 +174,8 @@ input {display: none;}
     font-size: 16px;
     text-decoration: none;
     color: #212121;
-}
+    }
+
 .wrapper-storyteller-button:hover {
     color:white;
     background-color: #212121;
