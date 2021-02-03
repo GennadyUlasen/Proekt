@@ -398,11 +398,7 @@ line-height: 33px;
 .client {
     width: 55%;
 }
-/* .swiper-slide {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-} */
+
 
 .clients-slide {
     position: relative;
@@ -423,33 +419,55 @@ line-height: 33px;
 
   /* Секция 6 */
 
-  /* .swiper-portfolio {
-      width: 100%;
-  } */
+  .portfolio-screenshots h2 {
+    padding-top: 100px;
+    padding-bottom: 38px;
+    font-family: "SourceSansPro-Bold", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .portfolio-screenshots p {
+    margin: 0 auto;
+    width: 60%;
+    font-family: "SourceSansPro-Regular", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.9;
+    padding-bottom: 110px;
+  }
+
+  .portfolio-screenshots ul {
+      display: flex;
+      justify-content: space-between;
+      width: 20%;
+      margin: 0 auto;
+      padding-bottom: 40px;
+      font-family: "SourceSansPro-Regular", sans-serif;
+      font-size: 16px;
+  }
 
   .container-portfolio {
-    width: 74%;
+    width: 97%;
     margin: 0 auto;
-    display: flex;
   }
 
 
   .swiper-portfolio {
     margin: 0 auto;
     width: 100%;
-      
-  }
+}
 
-  
-
-  .porfolio-slide {
+.porfolio-slide {
     position: relative;
     display: block;
-    width: 438px;
+    width: 439px;
     height: 358px;
 }
 
-.porfolio-slide img {
+.swiper-porfolio-slide img {
     position: absolute;
     top: 0;
     right: 0;
@@ -461,18 +479,42 @@ line-height: 33px;
 
 
 
-/* Секция 7 */
-.swiper-pagination {
+/* пагинация */
+.porfolio-pagination {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    height: 100px;
     width: 100%;
-    color: #e64a19
+    margin-bottom: 70px;
+    margin-top: 20px;
 }
 
 
+/* Секция 6 */
+
+.denis-waitley {
+    background-color: #212121;
+    font-family: "SourceSansPro-Regular", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:#fff;
+    
+}
+
+.paragraf-denis-waitley {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 2;
+    
+}
+
+.text-denis-waitley {
+    padding-bottom: 60px;
+    font-style: italic;
+    text-align: center;
+}
 
 
 
