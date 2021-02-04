@@ -1,5 +1,12 @@
-/* body {
+body {
     font-family: "SourceSansPro-Regular", sans-serif;
     font-size: 16px;
     background-color: #fff;
-} */
+}
+h2 {
+font-family: "SourceSansPro-Bold", sans-serif;
+font-size: 25px;
+font-weight: 800;
+text-transform: capitalize;
+text-align: center;
+}
