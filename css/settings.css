@@ -10,3 +10,9 @@ font-weight: 800;
 text-transform: capitalize;
 text-align: center;
 }
+
+h4 {
+    font-family: "SourceSansPro-Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+}
