@@ -616,7 +616,7 @@ line-height: 33px;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 48%;
+    width: 43%;
     min-height: 54vh;
     margin: 0 auto;
     background-color: rgba(255,255,255,0.3);
@@ -810,6 +810,9 @@ form {
 
 }
 
+input {
+    display: inline-block;
+}
 .container-links p {
     color: #999999;
 }
