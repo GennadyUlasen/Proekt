@@ -1,20 +1,31 @@
 let mySwiper =new Swiper('.client',  {
   slidesPerView: 6,
-  spaceBetween: 5,
+  spaceBetween: 10,
   slidesPerGroup: 2,
   loop: true,
-  loopFillGroupWithBlank: true,
+  // loopFillGroupWithBlank: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.button-clients-next',
+    prevEl: '.button-clients-prev',
   },
+  
 });
 
 
-let swiper = new Swiper('.swiper-portfolio',  {
-  slidesPerView: 3,
+var swiper = new Swiper('.swiper-portfolio', {
   pagination: {
-    el: '.porfolio-pagination',
-    clickable: true,
+    el: '.swiper-pagination',
+  },
+});
+
+let featuredSwiper =new Swiper('.featured',  {
+  slidesPerView: 1,
+  spaceBetween: 5,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: '.featured-button-next',
+    // prevEl: '.featured-button-prev',
   },
 });

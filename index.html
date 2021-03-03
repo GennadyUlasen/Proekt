@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="shortcut icon" href="./media/user-icon.ico" type="image/x-icon">
     <title>STORYTELLER</title>
 </head>
@@ -15,35 +16,36 @@
     <!-- Секция 1 -->
 
     <div class="background-head">
-        <header>
-            <nav class="nav-header">
+        <div class="background">
+            <header>
                 <a class="logo" href="#">unicorn</a>
-                <ul>
-                    <li><a class="nav-link" href="#">home</a></li>
-                    <li><a class="nav-link" href="#">about</a></li>
-                    <li><a class="nav-link" href="#">stories</a></li>
-                    <li><a class="nav-link" href="#">hello</a></li>
-                    <input class="nav__check" type="checkbox" id="showmenu" />
-                    <label class="nav__showmenu" for="showmenu">&#9776</label>
-                    <ul class="menu">
-                        <li><a class="menu__item" href="#">home</a></li>
-                        <li><a class="menu__item" href="#">about</a></li>
-                        <li><a class="menu__item" href="#">stories</a></li>
-                        <li><a class="menu__item" href="#">hello</a></li>
+                <nav class="nav-header">
+                    <ul>
+                        <li><a class="nav-link" href="#">home</a></li>
+                        <li><a class="nav-link" href="#">about</a></li>
+                        <li><a class="nav-link" href="#">stories</a></li>
+                        <li><a class="nav-link" href="#">hello</a></li>
+                        <input class="nav__check" type="checkbox" id="showmenu" />
+                        <label class="nav__showmenu" for="showmenu">&#9776</label>
+                        <ul class="menu">
+                            <li><a class="menu__item" href="#">home</a></li>
+                            <li><a class="menu__item" href="#">about</a></li>
+                            <li><a class="menu__item" href="#">stories</a></li>
+                            <li><a class="menu__item" href="#">hello</a></li>
+                        </ul>
                     </ul>
-                </ul>
-            </nav>
-
-            <section class="wrapper-section">
-                <h1>storyteller</h1>
-                <p class="wrapper-storyteller-text">One morning, when Gregor Samsa woke from troubled dreams, he found
-                    himself transformed in his bed into a horrible vermin. He lay on his ar mour-like back, and if he
-                    lifted his head a little he could see his brown belly, slightly domed and divided by arches into
-                    stiff sections.</p>
-                <a class="wrapper-storyteller-button" href="#">read the rest</a>
-            </section>
-
-        </header>
+                </nav>
+            </header>
+                <section class="wrapper-section">
+                    <h1>storyteller</h1>
+                    <span class="line"></span>
+                    <p class="wrapper-storyteller-text">One morning, when Gregor Samsa woke from troubled dreams, he found
+                        himself transformed in his bed into a horrible vermin. He lay on his ar mour-like back, and if he
+                        lifted his head a little he could see his brown belly, slightly domed and divided by arches into
+                        stiff sections.</p>
+                    <a class="wrapper-storyteller-button" href="#">read the rest</a>
+                </section>
+        </div>
     </div>
     <!-- Секция 2 -->
     <section class="who-why">
@@ -137,68 +139,83 @@
                 in the living room that was used by everyone, and so the door to this room was often kept closed in the
             </p>
         </div>
-        <div class="wrapper-item">
-            <div class="featured-wrapper-item">
-                <p class="wrapper-item-text">comic</p>
-                <p class="wrapper-item-sentence">A million ways to die in the wild wild wild west</p>
-                <div class="featured-articles-item">
-                    <picture class="picture">
-                        <source srcset="./media/Jimmy@1x.avif 1x,
-                                                ./media/Jimmy@2x.avif 2x,
-                                                ./media/Jimmy@3x.avif 3x" type="image/avif">
+        <div class="buttons-featured">
+            <div class="wrapper-item">
+                
+                <div class="swiper-container featured">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide wrapper-item">
+                            <div class="featured-wrapper-item">
+                                <p class="wrapper-item-text">comic</p>
+                                <p class="wrapper-item-sentence">A million ways to die in the wild wild wild west</p>
+                                <div class="featured-articles-item">
+                                    <picture class="picture">
+                                        <source srcset="./media/Jimmy@1x.avif 1x,
+                                                                ./media/Jimmy@2x.avif 2x,
+                                                                ./media/Jimmy@3x.avif 3x" type="image/avif">
 
-                        <source srcset="./media/Jimmy@1x.webp 1x,
-                                                ./media/Jimmy@2x.webp 2x,
-                                                ./media/Jimmy@3x.webp 3x" type="image/webp">
+                                        <source srcset="./media/Jimmy@1x.webp 1x,
+                                                                ./media/Jimmy@2x.webp 2x,
+                                                                ./media/Jimmy@3x.webp 3x" type="image/webp">
 
-                        <img srcset="./media/Jimmy@2x.png 2x, 
-                                             ./media/Jimmy@3x.png 3x" src="./media/Jimmy@1x.png" alt="Jimmy" />
-                    </picture>
-                    <p class="item-text">jimmy jefferson 21/08/2013</p>
+                                        <img srcset="./media/Jimmy@2x.png 2x, 
+                                                            ./media/Jimmy@3x.png 3x" src="./media/Jimmy@1x.png" alt="Jimmy" />
+                                    </picture>
+                                    <p class="item-text">jimmy jefferson 21/08/2013</p>
+                                </div>
+                            </div>
+                        
+
+                        
+                            <div class="featured-wrapper-item">
+                                <p class="wrapper-item-text">lifestyle</p>
+                                <p class="wrapper-item-sentence">The most comfortable chair comes with no backpain</p>
+                                <div class="featured-articles-item">
+                                    <picture>
+                                        <source srcset="./media/Gail@1x.avif 1x,
+                                                                    ./media/Gail@2x.avif 2x,
+                                                                    ./media/Gail@3x.avif 3x" type="image/avif">
+
+                                        <source srcset="./media/Gail@1x.webp 1x,
+                                                                    ./media/Gail@2x.webp 2x,
+                                                                    ./media/Gail@3x.webp 3x" type="image/webp">
+
+                                        <img srcset="./media/Gail@2x.png 2x, 
+                                                                ./media/Gail@3x.png 3x" src="./media/Gail@1x.jpg" alt="Gail" />
+                                    </picture>
+                                    <p class="item-text">Gail Gutierrez 21/08/2013
+                                </div>
+                            </div>
+                        
+
+                        
+                        
+                            <div class="featured-wrapper-item">
+                                <p class="wrapper-item-text">travel</p>
+                                <p class="wrapper-item-sentence">journey to the center of the earth with jefferson</p>
+                                <div class="featured-articles-item">
+                                    <picture>
+                                        <source srcset="./media/Mason@1x.avif 1x,
+                                                                    ./media/Mason@2x.avif 2x,
+                                                                    ./media/Mason@3x.avif 3x" type="image/avif">
+
+                                        <source srcset="./media/Mason@1x.webp 1x,
+                                                                    ./media/Mason@2x.webp 2x,
+                                                                    ./media/Mason@3x.webp 3x" type="image/webp">
+
+                                        <img srcset="./media/Mason@2x.jpg 2x, 
+                                                                ./media/Mason@3x.jpg 3x" src="./media/Mason@1x.jpg" alt="Mason" />
+                                    </picture>
+                                    <p class="item-text">mason johnston 21/08/2013
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    
                 </div>
+            
             </div>
-
-
-            <div class="featured-wrapper-item">
-                <p class="wrapper-item-text">lifestyle</p>
-                <p class="wrapper-item-sentence">The most comfortable chair comes with no backpain</p>
-                <div class="featured-articles-item">
-                    <picture>
-                        <source srcset="./media/Gail@1x.avif 1x,
-                                                    ./media/Gail@2x.avif 2x,
-                                                    ./media/Gail@3x.avif 3x" type="image/avif">
-
-                        <source srcset="./media/Gail@1x.webp 1x,
-                                                    ./media/Gail@2x.webp 2x,
-                                                    ./media/Gail@3x.webp 3x" type="image/webp">
-
-                        <img srcset="./media/Gail@2x.png 2x, 
-                                                 ./media/Gail@3x.png 3x" src="./media/Gail@1x.jpg" alt="Gail" />
-                    </picture>
-                    <p class="item-text">Gail Gutierrez 21/08/2013
-                </div>
-            </div>
-
-            <div class="featured-wrapper-item">
-                <p class="wrapper-item-text">travel</p>
-                <p class="wrapper-item-sentence">journey to the center of the earth with jefferson</p>
-                <div class="featured-articles-item">
-                    <picture>
-                        <source srcset="./media/Mason@1x.avif 1x,
-                                                    ./media/Mason@2x.avif 2x,
-                                                    ./media/Mason@3x.avif 3x" type="image/avif">
-
-                        <source srcset="./media/Mason@1x.webp 1x,
-                                                    ./media/Mason@2x.webp 2x,
-                                                    ./media/Mason@3x.webp 3x" type="image/webp">
-
-                        <img srcset="./media/Mason@2x.jpg 2x, 
-                                                 ./media/Mason@3x.jpg 3x" src="./media/Mason@1x.jpg" alt="Mason" />
-                    </picture>
-                    <p class="item-text">mason johnston 21/08/2013
-                </div>
-            </div>
-
+            <div class="swiper-button-next featured-button-next"></div>
         </div>
     </section>
 
@@ -213,36 +230,44 @@
                     <div class="swiper-slide">
 
                         <picture class="clients-slide">
-                            <source srcset="./media/atomic-hipster@1x.avif 1x,
-                            ./media/atomic-hipster@2x 2x,
-                            ./media/atomic-hipster@3x.avif 3x" type="image/avif">
-
-                            <source srcset="./media/atomic-hipster@1x.webp 1x,
-                            ./media/atomic-hipster@2x.webp 2x,
-                            ./media/atomic-hipster@3x.webp 3x" type="image/webp">
-
-                            <img srcset="./media/atomic-hipster@2x.jpg 2x, 
-                            ./media/atomic-hipster@3x.jpg 3x" src="./media/atomic-hipster@1x.jpg"
-                                alt="atomic-hipster" />
+                            <a href="#">
+                                <source srcset="./media/atomic-hipster@1x.avif 1x,
+                                ./media/atomic-hipster@2x 2x,
+                                ./media/atomic-hipster@3x.avif 3x" type="image/avif">
+                            </a>
+                            <a href="#">
+                                <source srcset="./media/atomic-hipster@1x.webp 1x,
+                                ./media/atomic-hipster@2x.webp 2x,
+                                ./media/atomic-hipster@3x.webp 3x" type="image/webp">
+                            </a>
+                            <a href="#">
+                                <img srcset="./media/atomic-hipster@2x.jpg 2x, 
+                                ./media/atomic-hipster@3x.jpg 3x" src="./media/atomic-hipster@1x.jpg"
+                                    alt="atomic-hipster" />
+                            </a>
                         </picture>
 
                     </div>
 
 
                     <div class="swiper-slide">
-
+                        
                         <picture class="clients-slide">
+                        <a href="#">
                             <source srcset="./media/booler-hipster@1x.avif 1x,
                             ./media/booler-hipster@2x.avif 2x,
                             ./media/booler-hipster@3x.avif 3x" type="image/avif">
-
+                        </a>
+                        <a href="#">
                             <source srcset="./media/booler-hipster@1x.webp 1x,
                             ./media/booler-hipster@2x.webp 2x,
                             ./media/booler-hipster@3x.webp 3x" type="image/webp">
-
+                        </a>
+                        <a href="#">
                             <img srcset="./media/booler-hipster@2x.jpg 2x, 
                             ./media/booler-hipster@3x.jpg 3x" src="./media/booler-hipster@1x.jpg"
                                 alt="booler-hipster" />
+                        </a>
                         </picture>
 
                     </div>
@@ -251,17 +276,21 @@
                     <div class="swiper-slide">
 
                         <picture class="clients-slide">
+                        <a href="#">
                             <source srcset="./media/hipster@1x.avif 1x,
                             ./media/hipster@2x.avif 2x,
                             ./media/hipster@3x.avif 3x" type="image/avif">
-
+                        </a>
+                        <a href="#">
                             <source srcset="./media/hipster@1x.webp 1x,
                             ./media/hipster@2x.webp 2x,
                             ./media/hipster@3x.webp 3x" type="image/webp">
-
+                        </a>
+                        <a href="#">
                             <img srcset="./media/hipster@2x.jpg 2x, 
                             ./media/hipster@3x.jpg 3x" src="./media/hipster@1x.jpg"
                                 alt="hipster" />
+                        </a>
                         </picture>
 
                     </div>
@@ -270,17 +299,21 @@
                     <div class="swiper-slide">
 
                         <picture class="clients-slide">
+                        <a href="#">
                             <source srcset="./media/motor-hipster@1x.avif 1x,
                             ./media/motor-hipster@2x.avif 2x,
                             ./media/motor-hipster@3x.avif 3x" type="image/avif">
-
+                        </a>
+                        <a href="#">
                             <source srcset="./media/motor-hipster@1x.webp 1x,
                             ./media/motor-hipster@2x.webp 2x,
                             ./media/motor-hipster@3x.webp 3x" type="image/webp">
-
+                        </a>
+                        <a href="#">
                             <img srcset="./media/motor-hipster@2x.jpg 2x, 
                             ./media/motor-hipster@3x.jpg 3x" src="./media/motor-hipster@1x.jpg"
-                                alt="motor-hipster" />
+                                alt="motor-hipster"/>
+                        </a>
                         </picture>
 
                     </div>
@@ -289,17 +322,21 @@
                     <div class="swiper-slide ">
 
                         <picture class="clients-slide">
+                        <a href="#">
                             <source srcset="./media/need-hipster@1x.avif 1x,
                             ./media/need-hipster@2x.avif 2x,
                             ./media/need-hipster@3x.avif 3x" type="image/avif">
-
+                        </a>
+                        <a href="#">
                             <source srcset="./media/need-hipster@1x.webp 1x,
                             ./media/need-hipster@2x.webp 2x,
                             ./media/need-hipster@3x.webp 3x" type="image/webp">
-
+                        </a>
+                        <a href="#">
                             <img srcset="./media/need-hipster@2x.jpg 2x, 
                             ./media/need-hipster@3x.jpg 3x" src="./media/need-hipster@1x.jpg"
-                                alt="need-hipster" />
+                                alt="need-hipster"/>
+                        </a>
                         </picture>
 
                     </div>
@@ -308,17 +345,21 @@
                     <div class="swiper-slide">
 
                         <picture class="clients-slide">
+                        <a href="#">
                             <source srcset="./media/puzzle-hipster@1x.avif 1x,
                             ./media/puzzle-hipster@2x.avif 2x,
                             ./media/puzzle-hipster@3x.avif 3x" type="image/avif">
-
+                        </a>    
+                        <a href="#">
                             <source srcset="./media/puzzle-hipster@1x.webp 1x,
                             ./media/puzzle-hipster@2x.webp 2x,
                             ./media/puzzle-hipster@3x.webp 3x" type="image/webp">
-
+                        </a>
+                        <a href="#">
                             <img srcset="./media/puzzle-hipster@2x.jpg 2x, 
                             ./media/puzzle-hipster@3x.jpg 3x" src="./media/puzzle-hipster@1x.jpg"
                                 alt="puzzle-hipster" />
+                        </a>
                         </picture>
 
                     </div>
@@ -327,17 +368,21 @@
                     <div class="swiper-slide">
 
                         <picture class="clients-slide">
+                        <a href="#">
                             <source srcset="./media/motor-hipster@1x.avif 1x,
                             ./media/motor-hipster@2x.avif 2x,
                             ./media/motor-hipster@3x.avif 3x" type="image/avif">
-
+                        </a>
+                        <a href="#">
                             <source srcset="./media/motor-hipster@1x.webp 1x,
                             ./media/motor-hipster@2x.webp 2x,
                             ./media/motor-hipster@3x.webp 3x" type="image/webp">
-
+                        </a>
+                        <a href="#">
                             <img srcset="./media/motor-hipster@2x.jpg 2x, 
                             ./media/motor-hipster@3x.jpg 3x" src="./media/motor-hipster@1x.jpg"
-                                alt="motor-hipster" />
+                                alt="motor-hipster"/>
+                        </a>
                         </picture>
 
                     </div>
@@ -346,25 +391,29 @@
                     <div class="swiper-slide">
 
                         <picture class="clients-slide">
+                        <a href="#">
                             <source srcset="./media/booler-hipster@1x.avif 1x,
                             ./media/booler-hipster@2x.avif 2x,
                             ./media/booler-hipster@3x.avif 3x" type="image/avif">
-
+                        </a>
+                        <a href="#">
                             <source srcset="./media/booler-hipster@1x.webp 1x,
                             ./media/booler-hipster@2x.webp 2x,
                             ./media/booler-hipster@3x.webp 3x" type="image/webp">
-
+                        </a>
+                        <a href="#">
                             <img srcset="./media/booler-hipster@2x.jpg 2x, 
                             ./media/booler-hipster@3x.jpg 3x" src="./media/booler-hipster@1x.jpg"
-                                alt="booler-hipster" />
+                                alt="booler-hipster"/>
+                        </a>
                         </picture>
                     </div>
 
                 </div>
 
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-button-prev button-clients-prev"></div> -->
+            <div class="swiper-button-next button-clients-next"></div>
         </div>
     </section>
 
@@ -373,134 +422,112 @@
         <h2>portfolio & screenshots</h2>
         <p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the </p>
         <ul>
-            <li>Art</li>
-            <li>Mystery</li>
-            <li>Illusion</li>
-            <li>Travel </li>
-            <li>Paintings</li>
+            <li><button class="btn">Art</button></li>
+            <li><button class="btn">Mystery</button></li>
+            <li><button class="btn">Illusion</button></li>
+            <li><button class="btn">Travel</button></li>
+            <li><button class="btn">Paintings</button></li>
         </ul>
 
-        <div class="container-portfolio">
+        <div class="slider-wrapper">
             <div class="swiper-container swiper-portfolio">
-                <div class="swiper-wrapper portfolio-wrapper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-porfolio-slide">
+
+                        <picture class="porfolio-slide">
+                            <source srcset="./media/road@1x.avif 1x,
+                            ./media/road@2x 2x,
+                            ./media/road@3x.avif 3x" type="image/avif">
+
+                            <source srcset="./media/road@1x.webp 1x,
+                            ./media/road@2x.webp 2x,
+                            ./media/road@3x.webp 3x" type="image/webp">
+
+                            <img srcset="./media/road@2x.jpg 2x, 
+                            ./media/road@3x.jpg 3x" src="./media/road@1x.jpg"
+                                alt="road" />
+                        </picture>
+
+                        <picture class="porfolio-slide">
+                            <source srcset="./media/decoration@1x.avif 1x,
+                            ./media/decoration@2x.avif 2x,
+                            ./media/decoration@3x.avif 3x" type="image/avif">
+
+                            <source srcset="./media/decoration@1x.webp 1x,
+                            ./media/decoration@2x.webp 2x,
+                            ./media/decoration@3x.webp 3x" type="image/webp">
+
+                            <img srcset="./media/decoration@2x.jpg 2x, 
+                            ./media/decoration@3x.jpg 3x" src="./media/decoration@1x.jpg"
+                                alt="decoration" />
+                        </picture>
+
+                        <picture class="porfolio-slide">
+                            <source srcset="./media/notebook@1x.avif 1x,
+                            ./media/notebook@2x.avif 2x,
+                            ./media/notebook@3x.avif 3x" type="image/avif">
+
+                            <source srcset="./media/notebook@1x.webp 1x,
+                            ./media/notebook@2x.webp 2x,
+                            ./media/notebook@3x.webp 3x" type="image/webp">
+
+                            <img srcset="./media/notebook@2x.jpg 2x, 
+                            ./media/notebook@3x.jpg 3x" src="./media/notebook@1x.jpg"
+                                alt="notebook" />
+                        </picture> 
+                    </div>
+
+                    <div class="swiper-slide swiper-porfolio-slide">
+
+                        <picture class="porfolio-slide">
+                            <source srcset="./media/road@1x.avif 1x,
+                            ./media/road@2x 2x,
+                            ./media/road@3x.avif 3x" type="image/avif">
+
+                            <source srcset="./media/road@1x.webp 1x,
+                            ./media/road@2x.webp 2x,
+                            ./media/road@3x.webp 3x" type="image/webp">
+
+                            <img srcset="./media/road@2x.jpg 2x, 
+                            ./media/road@3x.jpg 3x" src="./media/road@1x.jpg"
+                                alt="road" />
+                        </picture>
+
+                        <picture class="porfolio-slide">
+                            <source srcset="./media/decoration@1x.avif 1x,
+                            ./media/decoration@2x.avif 2x,
+                            ./media/decoration@3x.avif 3x" type="image/avif">
+
+                            <source srcset="./media/decoration@1x.webp 1x,
+                            ./media/decoration@2x.webp 2x,
+                            ./media/decoration@3x.webp 3x" type="image/webp">
+
+                            <img srcset="./media/decoration@2x.jpg 2x, 
+                            ./media/decoration@3x.jpg 3x" src="./media/decoration@1x.jpg"
+                                alt="decoration" />
+                        </picture>
+
+                        <picture class="porfolio-slide">
+                            <source srcset="./media/notebook@1x.avif 1x,
+                            ./media/notebook@2x.avif 2x,
+                            ./media/notebook@3x.avif 3x" type="image/avif">
+
+                            <source srcset="./media/notebook@1x.webp 1x,
+                            ./media/notebook@2x.webp 2x,
+                            ./media/notebook@3x.webp 3x" type="image/webp">
+
+                            <img srcset="./media/notebook@2x.jpg 2x, 
+                            ./media/notebook@3x.jpg 3x" src="./media/notebook@1x.jpg"
+                                alt="notebook" />
+                        </picture> 
+                    </div>
                     
-                    <div class="swiper-slide swiper-porfolio-slide">
-
-                        <picture class="porfolio-slide">
-                            <source srcset="./media/road@1x.avif 1x,
-                            ./media/road@2x 2x,
-                            ./media/road@3x.avif 3x" type="image/avif">
-
-                            <source srcset="./media/road@1x.webp 1x,
-                            ./media/road@2x.webp 2x,
-                            ./media/road@3x.webp 3x" type="image/webp">
-
-                            <img srcset="./media/road@2x.jpg 2x, 
-                            ./media/road@3x.jpg 3x" src="./media/road@1x.jpg"
-                                alt="road" />
-                        </picture>
-
-                    </div>
-
-
-                    <div class="swiper-slide swiper-porfolio-slide">
-
-                        <picture class="porfolio-slide">
-                            <source srcset="./media/decoration@1x.avif 1x,
-                            ./media/decoration@2x.avif 2x,
-                            ./media/decoration@3x.avif 3x" type="image/avif">
-
-                            <source srcset="./media/decoration@1x.webp 1x,
-                            ./media/decoration@2x.webp 2x,
-                            ./media/decoration@3x.webp 3x" type="image/webp">
-
-                            <img srcset="./media/decoration@2x.jpg 2x, 
-                            ./media/decoration@3x.jpg 3x" src="./media/decoration@1x.jpg"
-                                alt="decoration" />
-                        </picture>
-
-                    </div>
-
-
-                    <div class="swiper-slide swiper-porfolio-slide">
-
-                        <picture class="porfolio-slide">
-                            <source srcset="./media/notebook@1x.avif 1x,
-                            ./media/notebook@2x.avif 2x,
-                            ./media/notebook@3x.avif 3x" type="image/avif">
-
-                            <source srcset="./media/notebook@1x.webp 1x,
-                            ./media/notebook@2x.webp 2x,
-                            ./media/notebook@3x.webp 3x" type="image/webp">
-
-                            <img srcset="./media/notebook@2x.jpg 2x, 
-                            ./media/notebook@3x.jpg 3x" src="./media/notebook@1x.jpg"
-                                alt="notebook" />
-                        </picture>
-
-                    </div>
-
-                    <div class="swiper-slide swiper-porfolio-slide">
-
-                        <picture class="porfolio-slide">
-                            <source srcset="./media/road@1x.avif 1x,
-                            ./media/road@2x 2x,
-                            ./media/road@3x.avif 3x" type="image/avif">
-
-                            <source srcset="./media/road@1x.webp 1x,
-                            ./media/road@2x.webp 2x,
-                            ./media/road@3x.webp 3x" type="image/webp">
-
-                            <img srcset="./media/road@2x.jpg 2x, 
-                            ./media/road@3x.jpg 3x" src="./media/road@1x.jpg"
-                                alt="road" />
-                        </picture>
-
-                    </div>
-
-
-                    <div class="swiper-slide swiper-porfolio-slide">
-
-                        <picture class="porfolio-slide">
-                            <source srcset="./media/decoration@1x.avif 1x,
-                            ./media/decoration@2x.avif 2x,
-                            ./media/decoration@3x.avif 3x" type="image/avif">
-
-                            <source srcset="./media/decoration@1x.webp 1x,
-                            ./media/decoration@2x.webp 2x,
-                            ./media/decoration@3x.webp 3x" type="image/webp">
-
-                            <img srcset="./media/decoration@2x.jpg 2x, 
-                            ./media/decoration@3x.jpg 3x" src="./media/decoration@1x.jpg"
-                                alt="decoration" />
-                        </picture>
-
-                    </div>
-
-
-                    <div class="swiper-slide swiper-porfolio-slide">
-
-                        <picture class="porfolio-slide">
-                            <source srcset="./media/notebook@1x.avif 1x,
-                            ./media/notebook@2x.avif 2x,
-                            ./media/notebook@3x.avif 3x" type="image/avif">
-
-                            <source srcset="./media/notebook@1x.webp 1x,
-                            ./media/notebook@2x.webp 2x,
-                            ./media/notebook@3x.webp 3x" type="image/webp">
-
-                            <img srcset="./media/notebook@2x.jpg 2x, 
-                            ./media/notebook@3x.jpg 3x" src="./media/notebook@1x.jpg"
-                                alt="notebook" />
-                        </picture>
-
-                    </div>
                 </div>
+                <div class="swiper-pagination swiper-pagination-block"></div>
+            </div>
+            
         </div>                            
     </section>
-    <div class="porfolio-pagination">
-        <div class="swiper-pagination"></div>
-    </div>
     
     <!-- Секция 7 -->
     <section class="denis-waitley">
@@ -606,119 +633,96 @@
     <div class="facts-numbers-background">
         <h2>Facts & Numbers</h2>
         <div class="block-facts-numbers">
-            <div class="container-facts-numbers">
-                
-                <div class="successful-projects">
+            <div class="successful-projects">
                     <p class="successful-projects-figures">110</p>
                     <p>successful projects</p>
-                </div>
             </div>
 
-            <div class="container-facts-numbers">
-                <div class="successful-projects">
-                    <p class="successful-projects-figures">25</p>
-                    <p>awesome clients</p>
-                </div>
+            <div class="successful-projects">
+                <p class="successful-projects-figures">25</p>
+                <p>awesome clients</p>
+            </div>
+            <div class="successful-projects">
+                <p class="successful-projects-figures">30</p>
+                <p>awesome clients</p>
             </div>
 
-            <div class="container-facts-numbers">
-            
-                <div class="successful-projects">
-                    <p class="successful-projects-figures">30</p>
-                    <p>awesome clients</p>
-                </div>
-            </div>
-
-            <div class="container-facts-numbers">
-                
-                <div class="successful-projects">
-                    <p class="successful-projects-figures">13</p>
-                    <p>open source themes</p>
-                </div>
+            <div class="successful-projects">
+                <p class="successful-projects-figures">13</p>
+                <p>open source themes</p>
             </div>
         </div> 
     </div>  
  </section>
 
  <!-- Секция 10 -->
- <section class="section-photo-text">
-    <div class="container-photo-text">
-        <div class="block-photo-text">
-            <div class="block-text">
-                <p class="block-text-heading">Travel/21st March, 2014</p>
-                <h4>A New Product Is Coming</h4>
-                <p>The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.</p>
-            </div>
-
-            <div class="block-photo">
-                <picture>
-                    <source srcset="./media/photo@1x.avif 1x,
-                    ./media/photo@2x.avif 2x,
-                    ./media/photo@3x.avif 3x" type="image/avif">
-
-                    <source srcset="./media/photo@1x.webp 1x,
-                    ./media/photo@2x.webp 2x,
-                    ./media/photo@3x.webp 3x" type="image/webp">
-
-                    <img srcset="./media/photo@2x.jpg 2x, 
-                    ./media/photo@3x.jpg 3x" src="./media/photo@1x.jpg"
-                    alt="photo"/>
-                </picture>   
-            </div>
+    <section class="section-photo-text">
+        <div class="block-text">
+        <p class="block-text-heading">Travel/21st March, 2014</p>
+        <h4>A New Product Is Coming</h4>
+        <p>The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.</p>
         </div>
 
+        <div class="block-photo">
+        <picture>
+            <source srcset="./media/photo@1x.avif 1x,
+            ./media/photo@2x.avif 2x,
+            ./media/photo@3x.avif 3x" type="image/avif">
 
-        <div class="block-photo-text">
-            <div class="block-text right">
-                <p class="block-text-heading">Gadget / 3rd March, 2014</p>
-                <h4>Jimmy’s New Xbox Controller</h4>
-                <p>The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.</p>
-            </div>
+            <source srcset="./media/photo@1x.webp 1x,
+            ./media/photo@2x.webp 2x,
+            ./media/photo@3x.webp 3x" type="image/webp">
 
-            <div class="block-photo left">
-                <picture>
-                    <source srcset="./media/play@1x.avif 1x,
-                    ./media/play@2x.avif 2x,
-                    ./media/play@3x.avif 3x" type="image/avif">
-
-                    <source srcset="./media/play@1x.webp 1x,
-                    ./media/play@2x.webp 2x,
-                    ./media/play@3x.webp 3x" type="image/webp">
-
-                    <img srcset="./media/play@2x.jpg 2x, 
-                    ./media/play@3x.jpg 3x" src="./media/play@1x.jpg"
-                    alt="play"/>
-                </picture>   
-            </div>
+            <img srcset="./media/photo@2x.jpg 2x, 
+            ./media/photo@3x.jpg 3x" src="./media/photo@1x.jpg"
+            alt="photo"/>
+        </picture>   
         </div>
 
-        <div class="block-photo-text">
-            <div class="block-text">
-                <p class="block-text-heading">Travel/21st March, 2014</p>
-                <h4>A New Product Is Coming</h4>
-                <p>The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.</p>
-            </div>
+        <div class="block-photo">
+        <picture>
+            <source srcset="./media/play@1x.avif 1x,
+            ./media/play@2x.avif 2x,
+            ./media/play@3x.avif 3x" type="image/avif">
 
-            <div class="block-photo">
-                <picture>
-                    <source srcset="./media/coffe@1x.avif 1x,
-                    ./media/coffe@2x.avif 2x,
-                    ./media/coffe@3x.avif 3x" type="image/avif">
+        <source srcset="./media/play@1x.webp 1x,
+            ./media/play@2x.webp 2x,
+            ./media/play@3x.webp 3x" type="image/webp">
 
-                    <source srcset="./media/coffe@1x.webp 1x,
-                    ./media/coffe@2x.webp 2x,
-                    ./media/coffe@3x.webp 3x" type="image/webp">
+        <img srcset="./media/play@2x.jpg 2x, 
+            ./media/play@3x.jpg 3x" src="./media/play@1x.jpg"
+            alt="play"/>
+        </picture>   
+        </div>  
 
-                    <img srcset="./media/coffe@2x.jpg 2x, 
-                    ./media/coffe@3x.jpg 3x" src="./media/coffe@1x.jpg"
-                    alt="coffe"/>
-                </picture>   
-            </div>
+        <div class="block-text">
+        <p class="block-text-heading">Gadget / 3rd March, 2014</p>
+        <h4>Jimmy’s New Xbox Controller</h4>
+        <p>The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.</p>
+        </div>
+            
+        <div class="block-text">
+        <p class="block-text-heading">Travel/21st March, 2014</p>
+        <h4>A New Product Is Coming</h4>
+        <p>The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.</p>
         </div>
 
-        
-    </div>
- </section>
+        <div class="block-photo">
+        <picture>
+            <source srcset="./media/coffe@1x.avif 1x,
+            ./media/coffe@2x.avif 2x,
+            ./media/coffe@3x.avif 3x" type="image/avif">
+
+            <source srcset="./media/coffe@1x.webp 1x,
+            ./media/coffe@2x.webp 2x,
+            ./media/coffe@3x.webp 3x" type="image/webp">
+
+            <img srcset="./media/coffe@2x.jpg 2x, 
+            ./media/coffe@3x.jpg 3x" src="./media/coffe@1x.jpg"
+            alt="coffe"/>
+        </picture>   
+        </div>
+    </section>
 
 
  <!-- Секция 11 -->
@@ -783,63 +787,86 @@
 
     <!-- Секция 13 -->
     <footer>
-        <div class="footer-container">
-            <div class="container-unicorn">
-                <h4>unicorn</h4>
-                <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his</p>
-                <form action="#" id="main-form">
-                    <p class="email"><label for="email">EMAIL</label><input type="email" id="email"></p>
-                    <p class="text-subject"><label for="text">SUBJECT</label><input type="text" id="text"></p>
-                    <p class="text-message"><label for="text-message">MESSAGE</label><input type="text" id="text-message"></p>
-                </form>
-            </div>
-
-            <div class="container-links">
-                <div class="links">
-                    <h5>links</h5>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>About</p>
-                    <p> Services</p>
-                    <p>Menu</p>
-                    <p>Restaurants</p>
-                    <p>Work Hours</p>
-                    <p>Call Hours</p>
+        <div class="container-md">
+          <div class="row justify-content-between">
+            <div class="col-md-5 col-sm-12">
+              <div class="col-2">
+                <h2>Unicorn</h2>
+              </div>
+              <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his</p>
+              <div class="row">
+                <div class="col-6">
+                  <p class="form">email</p>
                 </div>
-                <div class="friends">
-                    <h5>friends</h5>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Services</p>
-                    <p>Menu</p>
-                    <p> Restaurants</p>
+                <div class="col-6">
+                  <p class="form">subject</p>
                 </div>
-
-                <div class="social">
-                    <h5>links</h5>
-                    <p>Facebook</p>
-                    <p>Twitter</p>
-                    <p>Github</p>
-                    <p>Pinterest</p>
-                    <p>Google Plus</p>
-                    <p>Dribbble</p>
-                    <p>Flickr</p>
-                    <p>Others</p>
-                </div>
+              </div>
+              <p class="form">message</p>
             </div>
-
-
-            <div class="container-send">
-               
-                    <p class="container-send-input"><label for="send">SEND&#9658;</label><input type="text" form="main-form" id="send"></p>
-                    <p class="container-send-text">One morning, when Gregor Samsa woke from troubled dreams, he found</p>
-                    <p>&copy; 2015 Your Awesome Company</p>
-            
-                <div class="terms"><p>TERMS</p> <p>Privacy Policy</p> <p>Contact</p> <p>Job</p>   </div>
+            <div class="col-2">
+              <h5>Links</h5>
+              <p>Home</p>
+              <p>About</p>
+              <p>Services</p>
+              <p>Menu</p>
+              <p>Restaurants</p>
+              <p>Work Hours</p>
+              <p>Call Hours</p>
             </div>
+    
+            <div class="col-2">
+              <h5>friends</h5>
+              <p>Home</p>
+              <p>About</p>
+              <p>Services</p>
+              <p>Menu</p>
+              <p>Restaurants</p>
+            </div>
+    
+            <div class="col-2">
+              <h5>social</h5>
+              <p>Facebook</p>
+              <p>Twitter</p>
+              <p>Github</p>
+              <p>Pinterest</p>
+              <p>Google Plus</p>
+              <p>Dribbble</p>
+              <p>Flickr</p>
+              <p>Others</p>
+            </div>
+      
+            <div class="col-md-12">
+              <p class="form">send</p>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-6">
+                <p>One morning, when Gregor Samsa woke from troubled dreams, he found</p>
+                <p>© 2015 Your Awesome Company</p>
+              </div>
+    
+              <div class="col-1 align-self-center">
+                <p class="footer-word">terms</p>
+              </div>  
+              <div class="col-1 align-self-center">
+                <p class="footer-word">privacy</p>
+              </div> 
+              <div class="col-1 align-self-center">
+                <p class="footer-word">policy</p>
+              </div>  
+              <div class="col-1 align-self-center">
+                <p class="footer-word">contact</p>
+              </div> 
+              <div class="col-1 align-self-center">
+                <p class="footer-word">job </p>
+              </div>
+                             
+            </div>                                               
+          </div>
         </div>
-    </footer>
+      </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
