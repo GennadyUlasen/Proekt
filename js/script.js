@@ -1,31 +1,87 @@
-let mySwiper =new Swiper('.client',  {
+let swiper = new Swiper('.featured', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    },
+    // when window width is >= 480px
+    615: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    // when window width is >= 640px
+    1100: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  },
+  navigation: {
+    nextEl: '.featured-button',
+  },
+});
+
+ let nextSwiper = new Swiper ('.clients-swipe', {
   slidesPerView: 6,
   spaceBetween: 10,
-  slidesPerGroup: 2,
   loop: true,
-  // loopFillGroupWithBlank: true,
   navigation: {
-    nextEl: '.button-clients-next',
-    prevEl: '.button-clients-prev',
+    nextEl: '.clients-button',
   },
-  
-});
 
-
-var swiper = new Swiper('.swiper-portfolio', {
-  pagination: {
-    el: '.swiper-pagination',
+  breakpoints: {
+    // when window width is >= 320px
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 0
+    },
+    600: {
+      slidesPerView: 4,
+      spaceBetween: 0
+    },
+    // when window width is >= 800px
+    800: {
+      slidesPerView: 5,
+      spaceBetween: 0
+    },
+    // when window width is >= 1100px
+    1100: {
+      slidesPerView: 6,
+      spaceBetween: 0
+    }
   },
-});
+    });
 
-let featuredSwiper =new Swiper('.featured',  {
-  slidesPerView: 1,
-  spaceBetween: 5,
-  slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  navigation: {
-    nextEl: '.featured-button-next',
-    // prevEl: '.featured-button-prev',
-  },
-});
+let threeSwiper = new Swiper ('.swiper-portfolio', {
+slidesPerView: 4,
+spaceBetween: 0,
+loop: true,
+pagination: {
+  el: '.swiper-pagination',
+},
+    
+breakpoints: {
+// when window width is >= 320px
+500: {
+slidesPerView: 1,
+spaceBetween: 0
+        },
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 0
+        },
+        // when window width is >= 800px
+        800: {
+          slidesPerView: 3,
+          spaceBetween: 0
+        },
+        // when window width is >= 1100px
+        1100: {
+          slidesPerView: 4,
+          spaceBetween: 0
+        }
+      },
+        });
