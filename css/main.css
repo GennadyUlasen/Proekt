@@ -93,7 +93,7 @@ header .logo:hover {
     width: 23px;
     height: 25px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
     bottom: 30px;
   }
   
@@ -363,9 +363,6 @@ display: none;
   /* Секция 6 */
 
   .portfolio-screenshots {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 100px 0 70px 0;
   }
 
@@ -389,14 +386,12 @@ display: none;
 
   .portfolio-screenshots ul {
       display: flex;
-      justify-content: space-between;
-      margin: 0 auto 45px;
+      justify-content: space-around;
+      margin: 0 auto;
       max-width: 50%;
       font-size: 16px;
   }
-  .portfolio-screenshots ul li {
-      margin-right: 20px;
-  }
+
   
 .btn {
     background: none;
@@ -405,17 +400,13 @@ display: none;
 
 .swiper-portfolio {
     max-width: 1500px;
+    max-height: 100%;
+    padding-bottom: 80px !important;
 }
 
-/* пагинация */
-.porfolio-pagination {
-    display: flex;
-    justify-content: center;
+.slide-portfolio img {
     width: 100%;
-    margin-bottom: 70px;
-    margin-top: 20px;
-}
-
+  }
 
 /* Секция 7 */
 
@@ -493,7 +484,7 @@ display: none;
 }
 
 .wrapper-img-tem-members img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -635,6 +626,17 @@ display: none;
     font-weight: lighter;
 }
 
+.personal-button::after {
+    display: none;
+}
+
+.personal-block .personal-button {
+    background-image: url(../media/button-prev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+}
+
 /* Секция 12 */
 
 .twitter-gail {
@@ -665,16 +667,14 @@ display: none;
 /* Секция 13 */
 
 footer {
-    padding: 80px 0 40px;
+    padding: 80px 15px 40px 15px;
     background-color: #212121;
     color: #999999;
 }
 
 .wrapper-footer {
     margin: 0 auto;
-    padding: 0 15px;
     max-width: 1170px;
-    
 }
 .unicorn-links {
     display: flex;
@@ -713,14 +713,11 @@ footer {
 .send-words {
     display: flex;
     align-items: flex-end;
-}
-
-.footer-word {
-    margin-left: 30px;
+    justify-content: space-around;
 }
 
  footer h2 {
-     padding: 0;
+    padding: 0;
     font-family: "SourceSansPro-Bold", sans-serif;
     font-size: 22px;
     line-height: 38px;
@@ -729,6 +726,9 @@ footer {
     color: #eeeeee;
  }
 
+ .footer-word {
+     padding-right: 20px;
+ }
  footer p {
     font-family: "SourceSansPro-Regular", sans-serif;
     font-size: 14px;
@@ -755,6 +755,12 @@ footer {
      background-color: #999999;
  }
 
+ footer .column {
+    display: flex;
+    justify-content: space-around;
+    flex: 100%;
+ }
+
  footer .form-message::after {
     content: "";
     display: block;
@@ -765,7 +771,7 @@ footer {
 }
 
  footer h5 {
-     padding-bottom: 35px;
+    padding-bottom: 35px;
     font-family: "SourceSansPro-Bold", sans-serif;
     font-size: 15px;
     line-height: 24px;
@@ -783,49 +789,51 @@ footer {
     color: #aaaaaa;
  }
 
- /* @media (min-width: 1100px) and (max-width: 1400px)  {
-    .nav__showmenu {display: none;}
+
+ @media screen and (max-width: 1100px) {
+    .wrapper-section {
+        top: 5%;
+        margin: 0 auto;
 }
 
-@media (min-width: 300px) and (max-width: 1100px)  {
-    header {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 0;}
-    
-    
-   ul li .nav-link {
-    display: none;
+@media screen and (max-width: 700px) {
+    .wrapper-storyteller-button {
+        margin-top: 5px;
+    }
+    .wrapper-section {
+            top: 0;
+            margin: 0 auto;
+    }
 }
 
-.nav__showmenu {
-    margin-right: 120px;
-}
+@media screen and (max-width: 500px) {
+    .wrapper-section p, h1::after, .header-link {
+        display:none;
+    }
+    .wrapper-section h1 {
+        font-size: 40px;
+    }
     .wrapper-section {
         align-items: center;
-        padding-top: 0;
+        position: static;
     }
-    .wrapper-storyteller-button {
-        margin-top: 0;
-    }
-    .features-wrapper {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .item-feature {
-        width: 100%;
-    }
-
     .container-team-members {
-        flex-wrap: wrap;
+        display: block;
     }
-
+    .wrapper-img-tem-members{
+        margin: 0 auto;
+    }
+    .unicorn-links {
+        display: block;
+    }
+    .unicorn {
+        padding: 20px 0;
+        max-width: 100%;
+    }
+    .send-text {
+        padding: 0;
+    }
+    .send-form-send {
+        display: block;
+    }
 }
-
- @media (min-width: 300px) and (max-width: 1210px)  {
-    .section-photo-text {display: block;}
-    .block-photo picture img {width: 300px;
-    height: 300px;}
-} */

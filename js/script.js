@@ -34,7 +34,7 @@ let swiper = new Swiper('.featured', {
 
   breakpoints: {
     // when window width is >= 320px
-    500: {
+    300: {
       slidesPerView: 3,
       spaceBetween: 0
     },
@@ -65,23 +65,54 @@ pagination: {
     
 breakpoints: {
 // when window width is >= 320px
-500: {
+300: {
 slidesPerView: 1,
 spaceBetween: 0
         },
-        600: {
-          slidesPerView: 2,
-          spaceBetween: 0
-        },
-        // when window width is >= 800px
-        800: {
-          slidesPerView: 3,
-          spaceBetween: 0
-        },
-        // when window width is >= 1100px
-        1100: {
-          slidesPerView: 4,
-          spaceBetween: 0
-        }
-      },
-        });
+800: {
+slidesPerView: 2,
+spaceBetween: 0
+},
+// when window width is >= 800px
+1100: {
+slidesPerView: 3,
+spaceBetween: 0
+},
+// when window width is >= 1100px
+1500: {
+slidesPerView: 4,
+spaceBetween: 0
+}
+  },
+    });
+
+let fourswiper = new Swiper('.personal-swiper', {
+slidesPerView: 3,
+spaceBetween: 30,
+loop: true,
+breakpoints: {
+
+320: {
+    slidesPerView: 1,
+    spaceBetween: 30
+                },
+// when window width is >= 320px
+500: {
+slidesPerView: 1,
+spaceBetween: 30
+            },
+// when window width is >= 480px
+800: {
+slidesPerView: 2,
+spaceBetween: 30
+            },
+// when window width is >= 640px
+1100: {
+slidesPerView: 3,
+spaceBetween: 30
+}
+},
+navigation: {
+  nextEl: '.personal-button',
+},
+});
