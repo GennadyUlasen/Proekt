@@ -790,7 +790,7 @@ footer {
  }
 
 
- @media screen and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
     .wrapper-section {
         top: 5%;
         margin: 0 auto;
@@ -816,6 +816,14 @@ footer {
     .wrapper-section {
         align-items: center;
         position: static;
+    }
+    .features {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .item-feature {
+        max-width: 100%;
     }
     .container-team-members {
         display: block;
