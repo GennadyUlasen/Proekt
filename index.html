@@ -19,24 +19,16 @@
             <header>
                 <a class="logo" href="#">unicorn</a>
                 <nav class="nav-header">
-                    <ul class="header-link">
-                        <li><a class="nav-link" href="#">home</a></li>
-                        <li><a class="nav-link" href="#">about</a></li>
-                        <li><a class="nav-link" href="#">stories</a></li>
-                        <li><a class="nav-link" href="#">hello</a></li>
-                    </ul>
-                    <div class="hamburger-menu">
-                        <input id="menu__toggle" type="checkbox" />
+                    <input id="menu__toggle" type="checkbox"/>
                         <label class="menu__btn" for="menu__toggle">
                           <span></span>
                         </label>
-                        <ul class="menu__box">
-                          <li><a class="menu__item" href="#">home</a></li>
-                          <li><a class="menu__item" href="#">about</a></li>
-                          <li><a class="menu__item" href="#">stories</a></li>
-                          <li><a class="menu__item" href="#">hello</a></li>
-                        </ul>
-                    </div>     
+                    <ul class="header-link menu__box">
+                        <li><a class="nav-link menu__item" href="#">home</a></li>
+                        <li><a class="nav-link menu__item" href="#">about</a></li>
+                        <li><a class="nav-link menu__item" href="#">stories</a></li>
+                        <li><a class="nav-link menu__item" href="#">hello</a></li>
+                    </ul>
                 </nav>
             </header>
                 <section class="wrapper-section">
@@ -165,7 +157,7 @@
                     <div class="swiper-slide">
                         <div class="featured-wrapper-item">
                             <p class="wrapper-item-text">lifestyle</p>
-                            <p class="wrapper-item-sentence">The most comfortable chair comes with no</p>
+                            <p class="wrapper-item-sentence">The most comfortable chair comes with no backpain</p>
                             <div class="featured-articles-item">
                                 <picture>
                                     <source srcset="./media/Gail@1x.avif 1x,
@@ -211,10 +203,61 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="featured-wrapper-item">
+                            <p class="wrapper-item-text">comic</p>
+                            <p class="wrapper-item-sentence">A million ways to die in the wild wild wild west</p>
+                            <div class="featured-articles-item">
+                                <picture class="picture">
+                                    <source srcset="./media/Jimmy@1x.avif 1x,
+                                                            ./media/Jimmy@2x.avif 2x,
+                                                            ./media/Jimmy@3x.avif 3x" type="image/avif">
+
+                                    <source srcset="./media/Jimmy@1x.webp 1x,
+                                                            ./media/Jimmy@2x.webp 2x,
+                                                            ./media/Jimmy@3x.webp 3x" type="image/webp">
+
+                                    <img srcset="./media/Jimmy@2x.png 2x, 
+                                                        ./media/Jimmy@3x.png 3x" src="./media/Jimmy@1x.png" alt="Jimmy" />
+                                </picture>
+                                <div class="wrapper-item-text">
+                                    <p class="item-text">jimmy jefferson</p> 
+                                    <p>21/08/2013</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-wrapper-item">
+                            <p class="wrapper-item-text">travel</p>
+                            <p class="wrapper-item-sentence">journey to the center of the earth with jefferson</p>
+                            <div class="featured-articles-item">
+                                <picture>
+                                <source srcset="./media/Mason@1x.avif 1x,
+                                                            ./media/Mason@2x.avif 2x,
+                                                            ./media/Mason@3x.avif 3x" type="image/avif">
+
+                                <source srcset="./media/Mason@1x.webp 1x,
+                                                            ./media/Mason@2x.webp 2x,
+                                                            ./media/Mason@3x.webp 3x" type="image/webp">
+
+                                <img srcset="./media/Mason@2x.jpg 2x, 
+                                                        ./media/Mason@3x.jpg 3x" src="./media/Mason@1x.jpg" alt="Mason" />
+                                </picture>
+                                <div class="wrapper-item-text">
+                                    <p class="item-text">mason johnston</p>
+                                    <p>21/08/2013</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div> 
-            <div class="swiper-button-next featured-button"></div>    
+            <div class="swiper-button-next featured-button-next"></div>
+            <div class="swiper-button-prev featured-button-prev"></div>    
         </div>
+        
     </section>
 
     <!-- Секция 5 -->
@@ -223,7 +266,7 @@
         <h2>clients</h2>
 
         <div class="swiper-container clients-swipe">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper clients-wrapper">
                 <div class="swiper-slide">
                     <picture>
                         <a href="#">
@@ -361,9 +404,29 @@
                         </a>
                     </picture>
                 </div>
-            </div>
-            <div class="swiper-button-next clients-button"></div> 
+                <div class="swiper-slide">
+                    <picture>
+                        <a href="#">
+                            <source srcset="./media/motor-hipster@1x.avif 1x,
+                            ./media/motor-hipster@2x.avif 2x,
+                            ./media/motor-hipster@3x.avif 3x" type="image/avif">
+                        </a>
+                        <a href="#">
+                            <source srcset="./media/motor-hipster@1x.webp 1x,
+                            ./media/motor-hipster@2x.webp 2x,
+                            ./media/motor-hipster@3x.webp 3x" type="image/webp">
+                        </a>
+                        <a href="#">
+                            <img srcset="./media/motor-hipster@2x.jpg 2x, 
+                            ./media/motor-hipster@3x.jpg 3x" src="./media/motor-hipster@1x.jpg"
+                                alt="motor-hipster"/>
+                        </a>
+                    </picture>
+                </div>
+            </div> 
         </div>
+        <div class="swiper-button-next clients-button-next"></div>
+        <div class="swiper-button-prev clients-button-prev"></div> 
     </section>
 
     <!-- Секция 6 -->
@@ -557,21 +620,21 @@
         <div class="block-facts-numbers">
             <div class="successful-projects">
                     <p class="successful-projects-figures">110</p>
-                    <p>successful projects</p>
+                    <p class="successful-projects-text">successful projects</p>
             </div>
 
             <div class="successful-projects">
                 <p class="successful-projects-figures">25</p>
-                <p>awesome clients</p>
+                <p class="successful-projects-text">awesome clients</p>
             </div>
             <div class="successful-projects">
                 <p class="successful-projects-figures">30</p>
-                <p>awesome clients</p>
+                <p class="successful-projects-text">awesome clients</p>
             </div>
 
             <div class="successful-projects">
                 <p class="successful-projects-figures">13</p>
-                <p>open source themes</p>
+                <p class="successful-projects-text">open source themes</p>
             </div>
         </div> 
     </div>  
@@ -651,7 +714,7 @@
     <section class="personal">
         <div class="personal-block">
             <div class="swiper-container personal-swiper">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper personal-wrapper">
                     <div class="swiper-slide">
                         <div class="paradise">
                             <p class="paradise-paragrah">Another Day In Paradise</p>
@@ -680,8 +743,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next personal-button"></div>
+                  
             </div> 
+            <div class="swiper-button-next personal-button-next"></div>
+            <div class="swiper-button-prev personal-button-prev"></div>  
         </div>
 
     </section>

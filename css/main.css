@@ -24,8 +24,9 @@ header {
     display: flex;
     justify-content: space-between;
     font-family: "SourceSansPro-Bold", sans-serif;
+    padding-top: 50px;
     font-size: 16px;
-    line-height: 32px;
+    line-height: 2em;
     font-weight: 700;
     text-transform: uppercase;
     color: #212121;
@@ -37,14 +38,13 @@ header {
     flex-direction: column;
     align-items: flex-end;
     position: relative;
-    top: 25%;
+    top: 10%;
     }
 
 header .logo {
-    padding-top: 52px;
     font-family: "SourceSansPro-Bold", sans-serif;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 2em;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -60,15 +60,10 @@ header .logo:hover {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
-    padding-top: 52px;
 }
 
 .header-link {
     display: flex;
-}
-
-.header-link li {
-    margin-right: 20px;
 }
 
 .nav-header ul li a:hover {
@@ -82,93 +77,12 @@ header .logo:hover {
 }
 
 /* Бургер начало */
+
 #menu__toggle {
     opacity: 0;
   }
-  
-  .menu__btn {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 23px;
-    height: 25px;
-    cursor: pointer;
-    z-index: 2;
-    bottom: 30px;
-  }
-  
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #616161;
-  }
-  .menu__btn > span::before {
-    content: '';
-    top: -8px;
-  }
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
-  
-  
-  .menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
-    width: 300px;
-    margin: 0;
-    padding: 30px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #ECEFF1;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  }
-  
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .menu__item:hover {
-    background-color: #CFD8DC;
-  }
-  
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-  }
-
   /* Бургер конец */
 
-
-h1 {
-    margin-bottom: 15px;
-    font-size: 72px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
 
 h1::after {
     content: "";
@@ -188,7 +102,7 @@ h1::after {
     width: 48%;
     text-align: right;
     font-size: 18px;
-    line-height: 2;
+    line-height: 2em;
     letter-spacing: -0.4px;
     
 }
@@ -216,26 +130,21 @@ h1::after {
     text-align: center;
     padding: 80px 0;
 }
-
-.who-why picture {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    width: 39px;
-    height: 39px;
+.who-why img {
+    padding-bottom: 30px;
 }
 
 .who-why p {
 margin: 0 auto;
 max-width: 73%;
 font-size: 16px;
-line-height: 2.5;
+line-height: 2.5em;
+padding: 60px 0 0;
 }
 
 /* Секция 3 */
 
 .features {
-    text-align: center;
     padding: 80px 0 110px 0;
     background-color: #efefef; 
     display: flex;
@@ -248,10 +157,8 @@ line-height: 2.5;
 
 .item-feature p {
     margin-top: 20px;
-    margin-bottom: 30px;
     font-weight: 600;
-    line-height: 1.5;
-    text-align: start;
+    line-height: 1.5em;
 }
 
 .item-feature h3 {
@@ -261,18 +168,7 @@ line-height: 2.5;
     font-weight: 800;
     text-transform: capitalize;
     letter-spacing: 2px;
-    text-align: start;
 }
-
-.item-feature picture {
-    position: relative;
-    display: block;
-    width: 40px;
-    height: 33px;
-}
-
-
-
 /* Секция 4 */
 
 .featured-articles {
@@ -280,25 +176,34 @@ line-height: 2.5;
 }
 
 .featured {
-    max-width: 1170px;
+    max-width: 80%;
+    padding-bottom: 30px !important;
 }
 
 .buttons-featured {
     position: relative;
 }
 .articles-text {
-    margin: 0 auto;
-    padding: 0 0 110px 0;
-    max-width: 62%;
+    margin: 60px auto;
+    width: 62%;
     font-size: 16px;
     text-align: center;
-    line-height: 1.9;
+    line-height: 1.9em;
 }
  
-.featured-button::after {
+.featured-button-next::after {
 display: none;
 } 
-.buttons-featured .featured-button {
+.featured-button-prev::after {
+    display: none;
+    } 
+.swiper-button-next {
+    background-image: url(../media/button-next.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+}
+.swiper-button-prev {
     background-image: url(../media/button-prev.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -306,25 +211,26 @@ display: none;
 }
 
 .featured-wrapper-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
     padding: 50px;
     background-color: #212121;
     color: #fff;
+    height: 350px;
 }
 
 .wrapper-item-sentence {
-    padding: 40px 0;
     font-size: 24px;
 }
 
 .featured-articles-item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.wrapper-item-text {
-    padding-left: 15px;
-}
 
 .featured-articles-item img {
     border-radius: 50px;
@@ -333,28 +239,20 @@ display: none;
 
 
 /* Секция 5 */
-
-
 .clients {
     padding: 70px 0 100px 0;
     background-color: #efefef;
+    position: relative;
 }
 
 .clients-swipe {
-    max-width: 906px;
+    max-width: 53%;
 }
-.clients-button::after {
+.clients-button-next::after {
     display: none;
 }
-
-.clients-swipe .clients-button {
-    background-image: url(../media/button-prev.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    right: 0;
-}
-.clients-swipe .swiper-slide {
-    text-align: center;
+.clients-button-prev::after {
+    display: none;
 }
 .swiper-slide img {
     max-width: 100%;
@@ -368,11 +266,11 @@ display: none;
 
 
   .portfolio-screenshots p {
-    margin: 0 auto;
-    max-width: 50%;
+    margin: 30px auto;
+    max-width: 52%;
     font-size: 16px;
     text-align: center;
-    line-height: 1.9;
+    line-height: 1.9em;
   }
 
   .portfolio-screenshots p::after {
@@ -380,8 +278,10 @@ display: none;
     display: block;
     height: 7px;
     background-color: #e64a19;
-    width: 13%;
-    margin: 50px auto;
+    width: 60px;
+    position: relative;
+    left: 50%;
+    margin: 30px 0  0 -30px;
   }
 
   .portfolio-screenshots ul {
@@ -390,6 +290,7 @@ display: none;
       margin: 0 auto;
       max-width: 50%;
       font-size: 16px;
+      margin: 30px auto
   }
 
   
@@ -400,12 +301,16 @@ display: none;
 
 .swiper-portfolio {
     max-width: 1500px;
-    max-height: 100%;
     padding-bottom: 80px !important;
+
 }
 
+.swiper-portfolio .swiper-slide {
+    height: 359px;
+}
 .slide-portfolio img {
     width: 100%;
+    height: 100%;
   }
 
 /* Секция 7 */
@@ -426,7 +331,7 @@ display: none;
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    line-height: 2;
+    line-height: 2em;
     
 }
 
@@ -456,7 +361,7 @@ display: none;
     width: 60%;
     font-size: 16px;
     text-align: center;
-    line-height: 1.9;
+    line-height: 1.9em;
 }
 
 .block-team-members {
@@ -519,17 +424,23 @@ display: none;
     color:#fff;
     letter-spacing: 2px;
  }
-
+ .successful-projects-figures {
+     position: relative;
+     padding-bottom: 20px;
+ }
+ .successful-projects-text {
+    padding-top: 20px;
+ }
  .successful-projects-figures::after {
      content: "";
      display: block;
-     margin-bottom: 20px;
-     margin-top: 20px;
      width: 60px;
      height: 4px;
      background-color: #000;
-     position: relative;
-     left: 37%;
+     position: absolute;
+     left: 50%;
+     margin-left: -30px;
+     bottom: 0;
      
  }
 
@@ -540,6 +451,7 @@ display: none;
     background-color: rgba(255,255,255,0.3);
     margin: 0 auto;
     max-width: 60%;
+    margin-top: 30px;
 }
 
 .facts-numbers-background::after {
@@ -553,7 +465,9 @@ display: none;
  .successful-projects {
      text-align: center;
      margin: 30px;
+     width: 30%;
  }
+
 
   /* Секция 10 */
 
@@ -571,11 +485,12 @@ display: none;
   .block-text, .block-photo {
     align-self: center;
     text-align: center;
+    line-height: 1.5em;
   }
-  .block-text h4 {
-    padding: 20px 0 40px 0;
+    .block-text {
+    display: grid;
+    grid-gap: 30px;
   }
-
   .block-photo img {
     max-width: 100%;
     height: auto;
@@ -587,27 +502,25 @@ display: none;
     background-color: #efefef;
     padding: 0 15px;
 }
+.personal-swiper {
+    max-width: 80%;
+}
 
 .personal-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 50px 0 50px 0;
-    width: 96%;
     margin: 0 auto;
+    position:relative;
 }
 
 .paradise {
     position: relative;
     margin-left: 10px;
-}
-
-.paradise p {
-    padding-left: 20px;
+    max-width: 70%;
 }
 
 .paradise::before {
     position: absolute;
+    left: -10px;
     content:"";
     display: block;
     width: 3px;
@@ -626,15 +539,11 @@ display: none;
     font-weight: lighter;
 }
 
-.personal-button::after {
+.personal-button-next::after {
     display: none;
 }
-
-.personal-block .personal-button {
-    background-image: url(../media/button-prev.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    right: 0;
+.personal-button-prev::after {
+    display: none;
 }
 
 /* Секция 12 */
@@ -656,6 +565,7 @@ display: none;
     font-size: 18px;
     max-width: 65%;
     text-align: center;
+    line-height: 2em;
 }
 
 .twitter-gail-paragraph {
@@ -720,7 +630,7 @@ footer {
     padding: 0;
     font-family: "SourceSansPro-Bold", sans-serif;
     font-size: 22px;
-    line-height: 38px;
+    line-height: 2em;
     font-weight: 700;
     text-transform: uppercase;
     color: #eeeeee;
@@ -732,7 +642,7 @@ footer {
  footer p {
     font-family: "SourceSansPro-Regular", sans-serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 2em;
     font-weight: 400;
     color: #999999;
  }
@@ -741,7 +651,7 @@ footer {
     font-family: "SourceSansPro-Regular", sans-serif;
     text-transform: uppercase;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 2em;
     font-weight: 400;
     color: #999999;
  }
@@ -774,7 +684,7 @@ footer {
     padding-bottom: 35px;
     font-family: "SourceSansPro-Bold", sans-serif;
     font-size: 15px;
-    line-height: 24px;
+    line-height: 2em;
     font-weight: 600;
     text-transform: uppercase;
     color: #dddddd;
@@ -783,13 +693,17 @@ footer {
  .footer-word {
     font-family: "SourceSansPro-Regular", sans-serif;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 2em;
     font-weight: 400;
     text-transform: uppercase;
     color: #aaaaaa;
  }
 
-
+ @media screen and (min-width: 650px) {
+    .header-link li {
+        margin-left: 20px;
+    }
+}
 @media screen and (max-width: 1100px) {
     .wrapper-section {
         top: 5%;
@@ -806,8 +720,8 @@ footer {
     }
 }
 
-@media screen and (max-width: 500px) {
-    .wrapper-section p, h1::after, .header-link {
+@media screen and (max-width: 650px) {
+    h1::after, .header-link {
         display:none;
     }
     .wrapper-section h1 {
@@ -817,6 +731,13 @@ footer {
         align-items: center;
         position: static;
     }
+    .wrapper-storyteller-text {
+        width: 60%;
+        text-align: center;
+    }
+    .who-why, .who-why p {
+        padding: 10px 0;
+    }
     .features {
         display: block;
         text-align: center;
@@ -824,12 +745,28 @@ footer {
     }
     .item-feature {
         max-width: 100%;
+        text-align: center;
+    }
+    .featured-articles {
+        padding: 20px 0;
+    }
+    .portfolio-screenshots {
+        padding: 20px 0;
+    }
+    .team-members {
+        padding: 20px 15px;
     }
     .container-team-members {
         display: block;
     }
     .wrapper-img-tem-members{
         margin: 0 auto;
+    }
+    .section-photo-text {
+        padding: 20px 15px;
+    }
+    .twitter-gail {
+        padding: 20px 0;
     }
     .unicorn-links {
         display: block;
@@ -845,3 +782,89 @@ footer {
         display: block;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .wrapper-storyteller-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 23px;
+        height: 25px;
+        cursor: pointer;
+        z-index: 2;
+        bottom: 0px;
+        right: 15px;
+      }
+      
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+      }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      
+      
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 30px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+      }
+      
+    .menu__item {
+        display: block;
+        padding: 25px 30px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    .menu__item:hover {
+        background-color: #CFD8DC;
+      }
+      
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      } 
+}
+
+

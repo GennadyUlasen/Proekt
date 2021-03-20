@@ -1,7 +1,10 @@
 let swiper = new Swiper('.featured', {
   slidesPerView: 3,
   spaceBetween: 30,
-  loop: true,
+  watchOverflow: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
   breakpoints: {
     // when window width is >= 320px
     320: {
@@ -20,16 +23,18 @@ let swiper = new Swiper('.featured', {
     }
   },
   navigation: {
-    nextEl: '.featured-button',
+    nextEl: '.featured-button-next',
+    prevEl: '.featured-button-prev',
   },
 });
 
  let nextSwiper = new Swiper ('.clients-swipe', {
   slidesPerView: 6,
   spaceBetween: 10,
-  loop: true,
+  watchOverflow: true,
   navigation: {
-    nextEl: '.clients-button',
+    nextEl: '.clients-button-next',
+    prevEl: '.clients-button-prev',
   },
 
   breakpoints: {
@@ -89,7 +94,7 @@ spaceBetween: 0
 let fourswiper = new Swiper('.personal-swiper', {
 slidesPerView: 3,
 spaceBetween: 30,
-loop: true,
+watchOverflow: true,
 breakpoints: {
 
 320: {
@@ -113,6 +118,8 @@ spaceBetween: 30
 }
 },
 navigation: {
-  nextEl: '.personal-button',
+  nextEl: '.personal-button-next',
+  prevEl: '.personal-button-prev',
 },
 });
+  

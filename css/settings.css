@@ -7,9 +7,9 @@ body {
 h1 {
     font-family: "SourceSansPro-Regular", sans-serif;
     font-size: 72px;
-    line-height: 32px;
-    font-weight: 900;
     color: #212121;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 h2 {
     font-family: "SourceSansPro-Bold", sans-serif;
@@ -17,7 +17,6 @@ h2 {
     font-weight: 800;
     text-transform: capitalize;
     text-align: center;
-    padding-bottom: 60px;
 }
 
 h4 {
