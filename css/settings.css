@@ -10,6 +10,7 @@ h1 {
     color: #212121;
     font-weight: 600;
     text-transform: uppercase;
+    margin: 0;
 }
 h2 {
     font-family: "SourceSansPro-Bold", sans-serif;
@@ -23,4 +24,15 @@ h4 {
     font-family: "SourceSansPro-Bold", sans-serif;
     font-size: 16px;
     font-weight: 800;
+}
+ul li {
+    list-style-type: none;
+}
+
+/* h2 {
+    margin: 0;
+} */
+
+h5 {
+    margin: 0;
 }
