@@ -846,6 +846,7 @@ form input {
         padding: 0;
     }
     .send-words {
+        width: 100%;
         /* padding: 0 15px;
         justify-content: space-between; */
     }
