@@ -288,6 +288,7 @@ display: none;
       display: flex;
       justify-content: space-around;
       margin: 0 auto;
+      padding-inline-start: 0;
       max-width: 50%;
       font-size: 16px;
       margin: 30px auto
@@ -483,13 +484,13 @@ display: none;
     padding: 110px 15px;
   }
 
-  .block-text, .block-photo, .block-text-order {
+  .block-text, .block-text-order {
     align-self: center;
     text-align: center;
     line-height: 2em;
   }
     .block-text h4, .block-text-order h4 {
-    margin: 15px 0 50px;
+    margin: 15px 0 30px;
   }
   .block-photo img {
     max-width: 100%;
@@ -791,6 +792,9 @@ form input {
     .portfolio-screenshots p {
         max-width: 100%;
     }
+    .portfolio-screenshots ul {
+        max-width: 100%;
+    }
     .team-members {
         padding: 20px 15px;
     }
@@ -809,6 +813,7 @@ form input {
     .section-photo-text {
         padding: 20px 15px;
         grid-template-columns: none;
+        grid-template-rows: none;
     }
     .block-text-order {
         grid-row-start: 3;
