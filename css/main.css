@@ -836,7 +836,7 @@ form input {
         padding: 0px 15px;
     }
     .unicorn {
-        padding: 0 0;
+        padding: 0 0 20px;
         max-width: 100%;
     }
     .unicorn-text {
