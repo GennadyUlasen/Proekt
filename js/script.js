@@ -12,12 +12,12 @@ let swiper = new Swiper('.featured', {
       spaceBetween: 40
     },
     // when window width is >= 480px
-    615: {
+    800: {
       slidesPerView: 2,
       spaceBetween: 40
     },
     // when window width is >= 640px
-    1100: {
+    1200: {
       slidesPerView: 3,
       spaceBetween: 30
     }
@@ -122,4 +122,37 @@ navigation: {
   prevEl: '.personal-button-prev',
 },
 });
-  
+
+document.querySelector (".btn-art").addEventListener ('click', function() {
+  let fiveSwiper = new Swiper ('.swiper-portfolio', {
+  slidesPerView: 3,
+  loop: true,
+  })
+  });
+
+document.querySelector (".btn-mystery").addEventListener ('click', function() {
+  let sixSwiper = new Swiper ('.swiper-portfolio', {
+  slidesPerView: 2,
+  loop: true,
+   })
+  });
+
+document.querySelector (".btn-illusion").addEventListener ('click', function() {
+  let sevenSwiper = new Swiper ('.swiper-portfolio', {
+  slidesPerView: 4,
+  loop: true,
+    })
+  });
+
+document.querySelector (".btn-travel").addEventListener ('click', function() {
+  let eightSwiper = new Swiper ('.swiper-portfolio', {
+  slidesPerView: 5,
+  loopAdditionalSlides: 5,
+  })
+  });
+
+document.querySelector (".btn-paintings").addEventListener ('click', function() {
+  let tenSwiper = new Swiper ('.swiper-portfolio', {
+  slidesPerView: 3,
+  loop: true,})
+  });

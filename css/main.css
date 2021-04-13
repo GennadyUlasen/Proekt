@@ -734,6 +734,7 @@ form input {
     .wrapper-section {
         top: 5%;
         margin: 0 auto;
+        padding-top: 0vh;
 }
 
 @media screen and (max-width: 700px) {
@@ -742,7 +743,7 @@ form input {
     }
     .wrapper-section {
         position: static;
-        margin: 50px auto;
+        margin: 0 auto;
     }
 }
 
@@ -804,9 +805,6 @@ form input {
     }
     .team-members p {
         width: 100%;
-    }
-    .block-team-members h4,  {
-
     }
     .container-team-members {
         display: block;
