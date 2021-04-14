@@ -740,7 +740,11 @@ form input {
     .wrapper-section {
         top: 5%;
         margin: 0 auto;
-        padding-top: 0vh;
+        /* padding-top: 0vh; */
+}
+.wrapper-storyteller-text {
+    width: 100%;
+}
 }
 
 @media screen and (max-width: 700px) {
