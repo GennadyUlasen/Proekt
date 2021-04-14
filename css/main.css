@@ -225,10 +225,16 @@ display: none;
     height: 350px;
 }
 
+.featured-wrapper-item p {
+    margin: 0;
+}
 .wrapper-item-sentence {
     font-size: 24px;
 }
 
+.wrapper-item-text p {
+    margin: 0;
+}
 .featured-articles-item {
     display: flex;
     align-items: center;
@@ -259,8 +265,8 @@ display: none;
     display: none;
 }
 .swiper-slide img {
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%;
+    height: auto; */
 }
   /* Секция 6 */
 
