@@ -264,7 +264,7 @@ display: none;
 .clients-button-prev::after {
     display: none;
 }
-.swiper-slide img {
+.clients-swipe .swiper-slide img {
     max-width: 100%;
     height: auto;
 }
